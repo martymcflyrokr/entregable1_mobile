@@ -1,5 +1,6 @@
-import { Button, FlatList, Modal, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Button, FlatList, Modal, Text, TextInput, TouchableOpacity, View } from 'react-native';
 
+import { Input } from './components';
 import { styles } from './styles';
 import { useState } from 'react';
 
@@ -32,11 +33,13 @@ export default function App() {
   }
 
   const onHandlerCancelModal = () => {
+    
     setModalVisible(!modalVisible);
     setSelectedEvent(null);
   }
 
   const onHandlerDeleteEvent = (id) => {
+    console.log('id', id);
     setEvents(events.filter(event => event.id !== id));
     setModalVisible(!modalVisible);
   }
@@ -52,7 +55,17 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.inputContainer}>
+      <Input
+        placeholder='Enter your event'
+        value={text}
+        onChangeText={(text)=> setText(text)}
+        buttonColor='#52528c'
+        buttonTitle='ADD'
+        onHandlerButton={onAddEvent}
+        
+
+      />
+      {/* <View style={styles.inputContainer}>
         <TextInput placeholder='Agrega tu evento' 
           style={styles.input} 
           value={text}
@@ -61,7 +74,7 @@ export default function App() {
         <Button title='ADD' color='#00a6fb'
           onPress={onAddEvent} 
         />
-      </View>
+      </View> */}
       <View style={styles.listContainer}>
         <FlatList
           renderItem={renderItem}
