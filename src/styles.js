@@ -6,18 +6,6 @@ export const styles = StyleSheet.create({
       backgroundColor: '#fff',
       marginHorizontal: 20,
     },
-    inputContainer: {
-      flexDirection: 'row',
-      marginTop: 55,
-      alignItems: 'center',
-      justifyContent: 'space-around'
-    },
-    input: {
-      width: '80%',
-      borderBottomWidth: 1,
-      borderBottomColor: '#00a6fb',
-      color: '#00a6fb',
-    },
     listContainer: {
       flex: 1,
       backgroundColor: '#fff',
@@ -39,35 +27,5 @@ export const styles = StyleSheet.create({
       fontSize: 16,
       fontWeight: 'bold',
   },
-  modalContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 60,
-    paddingVertical: 20,
-  },
-  modalTitle: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    marginBottom: 10,
-  },
-  modalDetailContainer: {
-    paddingVertical: 20,
-  },
-  modalDetailMessage: {
-    fontSize: 14,
-    color: '#212121',
-  },
-  selectedEvent: {
-    fontSize: 14,
-    color: '#212121',
-    fontWeight: 'bold',
-    paddingVertical: 10,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  buttonContainer: {
-    width: "80%",
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-  },
+ 
   });
