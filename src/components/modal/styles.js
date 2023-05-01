@@ -17,11 +17,11 @@ export const styles = StyleSheet.create({
       },
       detailMessage: {
         fontSize: 14,
-        color: '#212121',
+        color: '#eb5e28',
       },
       selectedEvent: {
         fontSize: 14,
-        color: '#212121',
+        color: '#eb5e28',
         fontWeight: 'bold',
         paddingVertical: 10,
         textAlign: 'center',

@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
   itemContainer: {
       height: 80,
       justifyContent: 'center',
-      backgroundColor: '#00a6fb',
+      backgroundColor: '#eb5e28',
       borderRadius: 5,
       marginVertical: 5,
       flexDirection: 'row',

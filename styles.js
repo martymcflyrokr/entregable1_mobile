@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
   itemContainer: {
       height: 80,
       justifyContent: 'center',
-      backgroundColor: '#00a6fb',
+      backgroundColor: '#eb5e28',
       borderRadius: 5,
       marginVertical: 5,
       flexDirection: 'row',
@@ -55,11 +55,11 @@ export const styles = StyleSheet.create({
   },
   modalDetailMessage: {
     fontSize: 14,
-    color: '#212121',
+    color: '#eb5e28',
   },
   selectedEvent: {
     fontSize: 14,
-    color: '#212121',
+    color: '#eb5e28',
     fontWeight: 'bold',
     paddingVertical: 10,
     textAlign: 'center',
